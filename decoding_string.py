@@ -20,7 +20,7 @@ def step2(cipher_result_from_step1):
     return second_step
 
 
-def decode_string(cipher, key, array_chelou, value_random):
+def generate_key(cipher, key, array_chelou, value_random):
     first_step = b""
 
     #array = [466, 59]
@@ -53,10 +53,10 @@ def decode_string(cipher, key, array_chelou, value_random):
     print(f"Step 3 Concatenate : {third_step}")
 
 
-def decode_string_2(cipher, array_chelou, chelou2):
+def decode_string(cipher, array_chelou, chelou2):
     final_string = b""
 
-    d = ( ((489-array_chelou[len(array_chelou)-1]) + 290) % 21)
+    d = ( ((-99-array_chelou[len(array_chelou)-1]) + 290) % 26)
 
     i = 0
     while i < len(cipher):
@@ -74,8 +74,9 @@ def decode_string_2(cipher, array_chelou, chelou2):
 
 
 
-ci = '8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]8^;"E\\0`x~+N{\'x9O{+V]'
-decode_string_2("M", [466, 212, 492], ci)
+ci = "PLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<U"
+decode_string_2('7MF\x0FZ|\x103+\x0F', [466, 212, 129], ci)
+                  
 """
 cipher = '%mg\f\x1B\v"nq\\0\t\x15?\\r\x18\r\x1EA\x18\f\x13wC\b'
 
