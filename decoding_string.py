@@ -53,10 +53,10 @@ def generate_key(cipher, key, array_chelou, value_random):
     print(f"Step 3 Concatenate : {third_step}")
 
 
-def decode_string(cipher, array_chelou, key, dynamic_value):
+def decode_string(cipher, array_chelou, key, dynamic_value, modulo):
     final_string = b""
 
-    d = ( ((dynamic_value-array_chelou[len(array_chelou)-1]) + 290) % 26)
+    d = ( ((dynamic_value-array_chelou[len(array_chelou)-1]) + 290) % modulo)
 
     i = 0
     while i < len(cipher):
@@ -75,7 +75,7 @@ def decode_string(cipher, array_chelou, key, dynamic_value):
 
 
 ci = "PLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<U"
-decode_string('7MF\x0FZ|\x103+\x0F', [466, 212, 129], ci, -99)
+decode_string('7MF\x0FZ|\x103+\x0F', [466, 212, 129], ci, -99, 26)
                   
 """
 cipher = '%mg\f\x1B\v"nq\\0\t\x15?\\r\x18\r\x1EA\x18\f\x13wC\b'
