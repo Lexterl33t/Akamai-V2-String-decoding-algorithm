@@ -75,7 +75,7 @@ def decode_string(cipher, array_chelou, key, dynamic_value):
 
 
 ci = "PLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<UPLUXdV^10wE('k#/dR_jm-!#<U"
-decode_string_2('7MF\x0FZ|\x103+\x0F', [466, 212, 129], ci, -99)
+decode_string('7MF\x0FZ|\x103+\x0F', [466, 212, 129], ci, -99)
                   
 """
 cipher = '%mg\f\x1B\v"nq\\0\t\x15?\\r\x18\r\x1EA\x18\f\x13wC\b'
